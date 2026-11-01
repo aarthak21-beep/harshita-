@@ -1,6 +1,5 @@
 import React from 'react';
-import { MessageCircle, Sparkles, CheckCircle2, HeartHandshake, Award, Clock } from 'lucide-react';
-import { BASE_WHATSAPP_URL } from '../utils/whatsapp';
+import { Sparkles, CheckCircle2, HeartHandshake, Award, Clock } from 'lucide-react';
 
 export const AboutHarshita: React.FC = () => {
   return (
@@ -74,10 +73,10 @@ export const AboutHarshita: React.FC = () => {
                 <HeartHandshake className="w-5 h-5 text-[#7C5DA6] shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-xs font-bold text-[#3B1F56]">
-                    Personalized WhatsApp Styling
+                    Personalized Design Guidance
                   </h4>
                   <p className="text-[11px] text-[#64507A] leading-snug mt-0.5">
-                    Share your saree picture on WhatsApp to get tailored neckline and sleeve recommendations.
+                    Get tailored neckline and sleeve recommendations to complement your saree.
                   </p>
                 </div>
               </div>
@@ -105,27 +104,7 @@ export const AboutHarshita: React.FC = () => {
                   </p>
                 </div>
               </div>
-            </div>
-
-            {/* Direct Consultation Link */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-              <a
-                href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                  'Hello Harshita! मला तुमच्याशी माझ्या साडीच्या ब्लाउज डिझाईन आणि स्टिचिंगबद्दल थेट बोलायचे आहे.'
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#5B3E8C] hover:bg-[#472E6F] text-white text-xs font-bold uppercase tracking-wider rounded-md shadow-xs transition"
-              >
-                <MessageCircle className="w-4 h-4 text-[#A7F3D0]" />
-                <span>Chat Directly with Harshita (9082867663)</span>
-              </a>
-
-              <span className="text-xs text-[#7C5DA6] text-center sm:text-left">
-                Direct consultation for measurements, fabrics & quotes.
-              </span>
-            </div>
-          </div>
+            </div>\n          </div>
         </div>
       </div>
     </section>
