@@ -70,7 +70,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             Contact
           </a>
-        </nav>{/* Primary Actions */}
+        </nav>
+
+        {/* Primary Actions */}
         <div className="flex items-center gap-3 shrink-0">
           {/* Wishlist Button */}
           <button
@@ -147,8 +149,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             </a>
           </div>
 
-          <div className="pt-2">
-          </div>
         </div>
       )}
     </header>
