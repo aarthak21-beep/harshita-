@@ -1,4 +1,7 @@
 import { BlouseDesign } from '../types';
+import heroBlouseImage from '../assets/images/hero_designer_blouses_1793545819948.jpg';
+import bridalMaggamImage from '../assets/images/bridal_maggam_showcase_1793545820641.jpg';
+import backNeckImage from '../assets/images/back_neck_designer_blouse_1793545820860.jpg';
 
 export const BLOUSE_CATEGORIES = [
   'All Designs',
@@ -203,8 +206,8 @@ export const BLOUSE_DESIGNS: BlouseDesign[] = [
     id: 'hc-brid-01',
     name: 'Harshita Bridal Signature Zardozi Blouse',
     category: 'Bridal Blouse Designs',
-    image: '/src/assets/images/hero_designer_blouses_1793545819948.jpg',
-    modelImage: '/src/assets/images/hero_designer_blouses_1793545819948.jpg',
+    image: heroBlouseImage,
+    modelImage: heroBlouseImage,
     fabric: 'Heavy Bridal Raw Silk in Royal Lavender',
     work: 'Hand Zardozi, Cutdana, French Knots & Seed Pearls',
     neckType: 'Plunging Sweetheart with Scalloped Embroidered Border',
@@ -220,7 +223,7 @@ export const BLOUSE_DESIGNS: BlouseDesign[] = [
     id: 'hc-brid-02',
     name: 'Radhika Heavy Maggam Kundan Bridal Blouse',
     category: 'Bridal Blouse Designs',
-    image: '/src/assets/images/bridal_maggam_showcase_1793545820641.jpg',
+    image: bridalMaggamImage,
     modelImage: 'https://images.unsplash.com/photo-1610030469668-96541f5e8886?auto=format&fit=crop&w=800&q=80',
     fabric: 'Heavy Mulberry Silk with Triple Cotton Canvas',
     work: 'Antique Kundan Stones, Real Freshwater Pearls & Bullion Wire',
@@ -484,8 +487,8 @@ export const BLOUSE_DESIGNS: BlouseDesign[] = [
     id: 'hc-magg-01',
     name: 'Gowri Full Sleeve Bridal Maggam Masterpiece',
     category: 'Maggam Work Blouse Designs',
-    image: '/src/assets/images/bridal_maggam_showcase_1793545820641.jpg',
-    modelImage: '/src/assets/images/bridal_maggam_showcase_1793545820641.jpg',
+    image: bridalMaggamImage,
+    modelImage: bridalMaggamImage,
     fabric: 'Thick Handloom Raw Silk in Royal Lavender',
     work: 'Heavy Maggam Kundan, Threadwork, Kasu & Zardosi',
     neckType: 'Grand Sweetheart with Heavy Maggam Frame',
@@ -578,8 +581,8 @@ export const BLOUSE_DESIGNS: BlouseDesign[] = [
     id: 'hc-back-01',
     name: 'Ishaani Deep V-Cut Tassel Dori Back Blouse',
     category: 'Fancy Back Neck Designs',
-    image: '/src/assets/images/back_neck_designer_blouse_1793545820860.jpg',
-    modelImage: '/src/assets/images/back_neck_designer_blouse_1793545820860.jpg',
+    image: backNeckImage,
+    modelImage: backNeckImage,
     fabric: 'Pure Mulberry Satin Silk in Lavender Mauve',
     work: 'Handcrafted Pearl Fringe, Lattice Cutwork & Custom Latkans',
     neckType: 'High Modest Front Boat Neck',
