@@ -148,17 +148,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           <div className="pt-2">
-            <a
-              href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                'Hello Harshita Creation! मला तुमच्या designer blouse collection बद्दल माहिती हवी आहे.'
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 py-3 bg-[#25D366] text-white font-semibold rounded-md shadow"
-            >
-              <MessageCircle className="w-5 h-5" />
-              <span>WhatsApp वर Order करा (9082867663)</span>
-            </a>
           </div>
         </div>
       )}
