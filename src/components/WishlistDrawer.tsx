@@ -115,5 +115,8 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
               </p>
             </div>
           )}
-        </div>\n      </div>\n    </div>\n  );
+        </div>
+      </div>
+    </div>
+  );
 };
