@@ -8,7 +8,6 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { DesignGallery } from './components/DesignGallery';
 import { AboutHarshita } from './components/AboutHarshita';
-import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { DesignModal } from './components/DesignModal';
 import { WishlistDrawer } from './components/WishlistDrawer';
@@ -158,8 +157,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* Contact & Consultation Section */}
-        <ContactSection />
       </main>
 
       {/* Footer */}
