@@ -15,22 +15,22 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#EBDFF7] transition-all">
+    <header className="royal-navbar sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#EBDFF7] transition-all">
       {/* Top Bar Announcement Strip */}
-      <div className="bg-gradient-to-r from-[#65438C] via-[#7B54A6] to-[#65438C] text-white text-[12px] py-1.5 px-4 text-center tracking-wide font-medium flex items-center justify-center gap-2">
+      <div className="bg-gradient-to-r from-[#65438C] via-[#7B54A6] to-[#65438C] text-white text-[12px] py-2 px-4 text-center tracking-[0.12em] font-semibold flex items-center justify-center gap-2">
         <Sparkles className="w-3.5 h-3.5 text-[#E6DBF5]" />
         <span>Exclusive Designer Blouses · Custom Stitching & Maggam Work</span>
       </div>
 
       {/* Main Navigation (3-Zone Top Bar Contract) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] flex items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[6.2rem] flex items-center justify-between gap-8">
         {/* Brand logo */}
         <a href="#" aria-label="Harshita Creation home" className="shrink-0 flex items-center">
-          <img src="/harshita-creation-logo.svg" alt="Harshita Creation — Exclusive Designer Blouses" className="h-14 sm:h-[4.5rem] w-auto max-w-[170px] sm:max-w-[210px] object-contain" />
+          <img src="/harshita-creation-logo.svg" alt="Harshita Creation — Exclusive Designer Blouses" className="h-16 sm:h-20 w-auto max-w-[185px] sm:max-w-[230px] object-contain" />
         </a>
 
         {/* Zone 2: Single-line Text Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-[#4F3B66]">
+        <nav className="hidden lg:flex items-center gap-8 text-[13px] font-semibold tracking-wide text-[#4F3B66]">
           <a
             href="#gallery"
             className="hover:text-[#3B1F56] transition-colors hover:underline underline-offset-8 decoration-[#8A63B8] decoration-2 whitespace-nowrap shrink-0"
@@ -62,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Wishlist Button */}
           <button
             onClick={onOpenWishlist}
-            className="relative p-2.5 rounded-full hover:bg-[#F3ECFB] text-[#4F3B66] hover:text-[#3B1F56] transition-colors cursor-pointer"
+            className="relative p-3 rounded-full hover:bg-[#F3ECFB] text-[#4F3B66] hover:text-[#3B1F56] transition-colors cursor-pointer"
             aria-label="View Saved Designs"
             title="माझे सेव्ह केलेले डिझाईन्स"
           >
@@ -86,7 +86,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-[#EBDFF7] px-5 py-5 space-y-4 shadow-lg animate-in slide-in-from-top duration-200">
+        <div className="lg:hidden bg-white border-b border-[#EBDFF7] px-5 py-5 space-y-4 shadow-xl animate-in slide-in-from-top duration-200">
           <div className="flex flex-col space-y-3 font-medium text-[#3B1F56]">
             <a
               href="#gallery"
