@@ -225,7 +225,7 @@ export const MeasurementGuideModal: React.FC<MeasurementGuideModalProps> = ({
             className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
-            <span>WhatsApp वर मापे पाठवा (9082867663)</span>
+            <span>WhatsApp वर मापे पाठवा</span>
           </button>
         </div>
       </div>
