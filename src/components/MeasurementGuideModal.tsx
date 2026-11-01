@@ -69,7 +69,7 @@ export const MeasurementGuideModal: React.FC<MeasurementGuideModalProps> = ({
                 Blouse Measurement Guide & Form
               </h3>
               <p className="text-xs text-[#7C5DA6]">
-                योग्य मापे घ्या आणि WhatsApp वर पाठवून परफेक्ट फिटिंग मिळवा
+                योग्य माप घ्या आणि WhatsApp वर पाठवून परफेक्ट फिटिंग मिळवा
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export const MeasurementGuideModal: React.FC<MeasurementGuideModalProps> = ({
             <Info className="w-5 h-5 text-[#7C5DA6] shrink-0 mt-0.5" />
             <div className="space-y-1">
               <p className="font-semibold text-[#3B1F56]">
-                मापे कशी घ्यावी? (How to measure):
+                माप कसे घ्यावे? (How to measure):
               </p>
               <p className="leading-relaxed">
                 टेप खूप सैल किंवा खूप घट्ट ओढू नका. जर तुमच्याकडे आधीचा परफेक्ट बसणारा ब्लाउज असेल, तर त्याचे माप घेऊनसुद्धा खालील रकान्यात भरू शकता. हवे असल्यास जुन्या ब्लाउजचा फोटो थेट WhatsApp वर पाठवू शकता.
@@ -100,7 +100,7 @@ export const MeasurementGuideModal: React.FC<MeasurementGuideModalProps> = ({
           {/* Form fields grid */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-[#5B3E8C]">
-              ब्लाउजचे मापे (Inches मध्ये भरा)
+              ब्लाउजचे माप (Inches मध्ये भरा)
             </h4>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
@@ -225,7 +225,7 @@ export const MeasurementGuideModal: React.FC<MeasurementGuideModalProps> = ({
             className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
-            <span>WhatsApp वर मापे पाठवा</span>
+            <span>WhatsApp वर माप पाठवा</span>
           </button>
         </div>
       </div>
