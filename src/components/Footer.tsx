@@ -1,6 +1,5 @@
 import React from 'react';
-import { MessageCircle, Heart } from 'lucide-react';
-import { BASE_WHATSAPP_URL, WHATSAPP_PHONE } from '../utils/whatsapp';
+import { Heart } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -20,17 +19,6 @@ export const Footer: React.FC = () => {
               Bringing exquisite craftsmanship, bespoke blouse designs, and impeccable custom fitting to discerning women across India.
             </p>
             <div className="pt-2">
-              <a
-                href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                  'Hello Harshita Creation! मला तुमच्या blouse designs बद्दल माहिती हवी आहे.'
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-semibold text-[#A7F3D0] hover:text-white transition"
-              >
-                <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp Order: {WHATSAPP_PHONE}</span>
-              </a>
             </div>
           </div>
 
