@@ -107,7 +107,7 @@ export const DesignCard: React.FC<DesignCardProps> = ({
           {/* MANDATORY PRICE REQUIREMENT: "Price साठी संपर्क करा" */}
           <div className="text-center py-1 px-2 rounded bg-[#FAF6FD] border border-[#EFE7FA]">
             <span className="text-xs font-semibold text-[#5B3E8C] tracking-wide">
-              Price साठी WhatsApp करा
+              Price साठी संपर्क करा
             </span>
           </div>        </div>
       </div>
