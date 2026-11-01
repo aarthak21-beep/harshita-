@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Heart, MessageCircle, Eye, Sparkles } from 'lucide-react';
+import { Heart, Eye, Sparkles } from 'lucide-react';
 import { BlouseDesign } from '../types';
-import { getWhatsAppDesignEnquiryUrl } from '../utils/whatsapp';
 import { ImageWithFallback } from './ImageWithFallback';
 
 interface DesignCardProps {
@@ -105,24 +104,12 @@ export const DesignCard: React.FC<DesignCardProps> = ({
 
         {/* Price & Action Section */}
         <div className="pt-2 border-t border-[#F2ECF9] space-y-2">
-          {/* MANDATORY PRICE REQUIREMENT: "Price साठी WhatsApp करा" */}
+          {/* MANDATORY PRICE REQUIREMENT: "Price साठी संपर्क करा" */}
           <div className="text-center py-1 px-2 rounded bg-[#FAF6FD] border border-[#EFE7FA]">
             <span className="text-xs font-semibold text-[#5B3E8C] tracking-wide">
               Price साठी WhatsApp करा
             </span>
-          </div>
-
-          {/* WhatsApp Button */}
-          <a
-            href={getWhatsAppDesignEnquiryUrl(design, 'general')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-2 px-3 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-semibold rounded-md flex items-center justify-center gap-1.5 shadow-xs transition-colors"
-          >
-            <MessageCircle className="w-3.5 h-3.5 shrink-0" />
-            <span>WhatsApp Enquiry</span>
-          </a>
-        </div>
+          </div>        </div>
       </div>
     </div>
   );
