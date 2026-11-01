@@ -229,48 +229,9 @@ export const DesignModal: React.FC<DesignModalProps> = ({
                   <span className="font-semibold text-[#3B1F56]">{design.idealFor}</span>
                 </div>
               </div>
-
-              {/* Interactive WhatsApp Topic Selector */}
-              <div className="space-y-2 pt-2">
-                <label className="text-xs font-semibold text-[#3B1F56] flex items-center justify-between">
-                  <span>तुमची चौकशी कशाबद्दल आहे? (Select Enquiry Topic):</span>
-                  <button
-                    onClick={onOpenMeasurementGuide}
-                    className="text-[11px] text-[#7C5DA6] hover:text-[#5B3E8C] underline font-normal cursor-pointer"
-                  >
-                    मापे कशी घ्यावी?
-                  </button>
-                </label>
-
-                <div className="grid grid-cols-2 gap-1.5">
-                  {enquiryTopics.map((topic) => (
-                    <button
-                      key={topic.id}
-                      type="button"
-                      onClick={() => setSelectedTopic(topic.id)}
-                      className={`px-2.5 py-1.5 text-xs text-left rounded border transition-all cursor-pointer ${
-                        selectedTopic === topic.id
-                          ? 'border-[#5B3E8C] bg-[#5B3E8C] text-white font-medium'
-                          : 'border-[#E7D9F7] bg-white text-[#4A3860] hover:bg-[#FAF6FD]'
-                      }`}
-                    >
-                      <span className="block text-[10px] opacity-80">{topic.marathi}</span>
-                      <span className="truncate block font-medium">{topic.label}</span>
-                    </button>
-                  ))}
-                </div>
-
-                <div className="pt-1">
-                  <input
-                    type="text"
-                    value={customNote}
-                    onChange={(e) => setCustomNote(e.target.value)}
-                    placeholder="काही विशेष टीप? (उदा. लग्नाची तारीख किंवा रंग बदल)"
-                    className="w-full px-3 py-2 text-xs border border-[#DDCDEE] rounded-md focus:outline-none focus:ring-1 focus:ring-[#7C5DA6] bg-[#FAF8FC]"
-                  />
-                </div>
-              </div>
-            </div>\n          </div>\n        </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
