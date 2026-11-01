@@ -12,19 +12,6 @@ export interface Testimonial {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    id: 't-1',
-    name: 'Priyanka Kulkarni',
-    city: 'Pune (Kothrud)',
-    occasion: 'Wedding Reception',
-    blouseDesign: 'Harshita Bridal Signature Zardozi Blouse',
-    rating: 5,
-    quoteMarathi:
-      'माझ्या लग्नाच्या रिसेप्शनसाठी हर्षिताकडून डिझाइन केलेला ब्लाउज परिधान केला होता. फिटिंग इतकी अप्रतिम होती की सगळ्यांनी डिझाईनची खूप स्तुती केली! जरदोसी वर्क खूप नाजूक आणि भारी आहे.',
-    quoteEnglish:
-      'The fitting was immaculate and required zero alterations. The zardozi embroidery is so fine and luxurious! Everyone at the reception asked about Harshita Creation.',
-    date: 'ऑक्टोबर २०२६',
-  },
-  {
     id: 't-2',
     name: 'Snehal Deshmukh',
     city: 'Mumbai (Dadar)',
