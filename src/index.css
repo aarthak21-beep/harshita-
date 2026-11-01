@@ -322,3 +322,33 @@ body { background: var(--royal-ivory); }
   .royal-design-card > div:last-child { padding: 9px; }
   .royal-design-card > div:first-child button { padding: 5px 7px; }
 }
+
+
+/* Touch-device usability: keep card actions visible without hover */
+@media (hover: none), (pointer: coarse) {
+  .royal-design-card .group-hover\\:opacity-100 {
+    opacity: 1 !important;
+  }
+  .royal-design-card .group-hover\\:scale-105 {
+    transform: none;
+  }
+  .royal-design-card button,
+  .royal-navbar button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
+@media (max-width: 639px) {
+  .royal-design-card .group-hover\\:opacity-100 {
+    bottom: 8px;
+  }
+  .royal-design-card .group-hover\\:opacity-100 button {
+    min-height: 38px;
+    font-size: 10px;
+    border-radius: 999px;
+  }
+  .royal-design-card > div:last-child {
+    padding: 12px;
+    gap: 9px;
+  }
+}
