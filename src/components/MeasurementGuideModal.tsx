@@ -220,10 +220,6 @@ export const MeasurementGuideModal: React.FC<MeasurementGuideModalProps> = ({
 
         {/* Footer / Submit */}
         <div className="p-4 sm:p-5 border-t border-[#F0E6FC] bg-[#FAF8FC] flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-[#6C5586] text-center sm:text-left">
-            मापे भरून खालील बटण दाबा. थेट WhatsApp वर मेसेज तयार होईल.
-          </p>
-
           <button
             onClick={handleSendToWhatsApp}
             className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
