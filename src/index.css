@@ -48,3 +48,52 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #BFA8DE;
 }
+
+
+/* HARSHITA CREATION — Royal Luxury visual system */
+:root {
+  --royal-ink: #24142f;
+  --royal-plum: #40204f;
+  --royal-purple: #67418a;
+  --royal-gold: #b89555;
+  --royal-gold-light: #ead9b5;
+  --royal-ivory: #fbf8f1;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--royal-ivory); }
+::selection { background: #e8d7b5; color: #24142f; }
+.royal-luxury { background: var(--royal-ivory); color: var(--royal-ink); }
+.royal-navbar { box-shadow: 0 8px 30px rgba(43, 25, 53, .055); border-bottom-color: rgba(184,149,85,.42); }
+.royal-navbar > div:first-child { background: linear-gradient(100deg,#281633 0%,#59366d 48%,#281633 100%); color:#f8edda; }
+.royal-navbar nav a, .royal-navbar nav button { transition: color .25s ease, transform .25s ease; }
+.royal-navbar nav a:hover, .royal-navbar nav button:hover { color: var(--royal-gold); transform: translateY(-1px); }
+.royal-hero { background: radial-gradient(ellipse at 78% 18%,rgba(184,149,85,.16),transparent 34%), linear-gradient(135deg,#fbf8f1 0%,#f4ecf4 52%,#f9f4e9 100%); border-bottom-color:rgba(184,149,85,.38); }
+.royal-hero::after { content:""; position:absolute; inset:18px; border:1px solid rgba(184,149,85,.14); border-radius:24px; pointer-events:none; }
+.royal-hero-title { color:#321b40; letter-spacing:-.045em; text-wrap:balance; }
+.royal-hero-image { border:5px solid #fff; outline:1px solid rgba(184,149,85,.65); box-shadow:0 28px 70px rgba(48,27,57,.2); }
+.royal-kicker { background:#f4ead7; border-color:#d9c39a; color:#6a4d25; }
+.royal-luxury a, .royal-luxury button { transition-duration:.25s; }
+.royal-luxury main a[href="#gallery"] { background:linear-gradient(115deg,#35203f,#67418a 58%,#8a6941); box-shadow:0 12px 26px rgba(58,34,70,.2); }
+.royal-luxury main a[href="#gallery"]:hover { filter:brightness(1.12); transform:translateY(-2px); box-shadow:0 16px 30px rgba(58,34,70,.25); }
+.royal-showcase { background:linear-gradient(110deg,#f8f2e7,#f2eaf4 50%,#f8f2e7); border-color:rgba(184,149,85,.34); }
+.royal-feature-card { border-color:rgba(184,149,85,.42); box-shadow:0 14px 34px rgba(47,28,55,.07); transition:transform .3s ease,box-shadow .3s ease; }
+.royal-feature-card:hover { transform:translateY(-4px); box-shadow:0 20px 42px rgba(47,28,55,.12); }
+.royal-gallery { background:linear-gradient(180deg,#fbf8f1,#f8f4f8 48%,#fbf8f1); }
+.royal-filter-panel { border-color:rgba(184,149,85,.42); box-shadow:0 16px 38px rgba(47,28,55,.065); }
+.royal-gallery input:focus, .royal-gallery select:focus { outline-color:#b89555; border-color:#b89555; }
+.royal-measurement { background:radial-gradient(ellipse at 80% 0%,rgba(210,178,119,.24),transparent 38%),linear-gradient(115deg,#281633,#51315f 58%,#34203f); border-top:1px solid rgba(221,190,133,.45); border-bottom:1px solid rgba(221,190,133,.45); }
+.royal-measurement button { box-shadow:0 10px 24px rgba(20,10,28,.22); }
+.royal-luxury section[id="about-harshita"] { background:linear-gradient(120deg,#fffdf8,#f5eff5); }
+.royal-luxury section[id="about-harshita"] > div { padding-top:3.5rem; padding-bottom:3.5rem; }
+.royal-luxury section[id="about-harshita"] [class*="rounded-lg"][class*="border"] { border-color:rgba(184,149,85,.34); box-shadow:0 8px 22px rgba(47,28,55,.045); }
+.royal-luxury footer { border-top-color:rgba(184,149,85,.6); background:radial-gradient(ellipse at 85% 12%,rgba(184,149,85,.15),transparent 30%),linear-gradient(135deg,#1f1428,#34203f 58%,#21152b); }
+.royal-luxury footer img { box-shadow:0 8px 30px rgba(0,0,0,.12); }
+.royal-luxury :focus-visible { outline:2px solid #b89555; outline-offset:3px; }
+@media (prefers-reduced-motion: no-preference) {
+  .royal-hero-image { animation: royal-arrive .8s ease-out both; }
+  @keyframes royal-arrive { from { opacity:0; transform:translateY(14px) scale(.985); } to { opacity:1; transform:translateY(0) scale(1); } }
+}
+@media (max-width:640px) {
+  .royal-hero::after { inset:8px; border-radius:16px; }
+  .royal-hero-title { font-size:clamp(2.45rem,11vw,3.5rem); }
+}
