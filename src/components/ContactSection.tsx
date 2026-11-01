@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Clock, Truck, CheckCircle2, Sparkles, ChevronDown } from 'lucide-react';
+import { Clock, Truck, Sparkles } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -39,7 +39,7 @@ export const ContactSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
           <div className="rounded-xl border border-[#EADBFA] bg-[#FAF8FC] p-5 text-center space-y-2">
             <Clock className="w-6 h-6 mx-auto text-[#7C5DA6]" />
             <h3 className="font-semibold text-sm text-[#3B1F56]">Working Hours</h3>
@@ -49,11 +49,6 @@ export const ContactSection: React.FC = () => {
             <Truck className="w-6 h-6 mx-auto text-[#7C5DA6]" />
             <h3 className="font-semibold text-sm text-[#3B1F56]">Delivery</h3>
             <p className="text-xs text-[#5D4B72]">Courier options can be discussed</p>
-          </div>
-          <div className="rounded-xl border border-[#EADBFA] bg-[#FAF8FC] p-5 text-center space-y-2">
-            <CheckCircle2 className="w-6 h-6 mx-auto text-[#7C5DA6]" />
-            <h3 className="font-semibold text-sm text-[#3B1F56]">Made With Care</h3>
-            <p className="text-xs text-[#5D4B72]">Attention to design and fitting</p>
           </div>
         </div>
 
