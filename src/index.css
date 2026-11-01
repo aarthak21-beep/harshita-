@@ -97,3 +97,11 @@ body { background: var(--royal-ivory); }
   .royal-hero::after { inset:8px; border-radius:16px; }
   .royal-hero-title { font-size:clamp(2.45rem,11vw,3.5rem); }
 }
+
+.royal-design-card { border-color:rgba(184,149,85,.38); box-shadow:0 10px 28px rgba(43,25,53,.07); transition:transform .32s ease,box-shadow .32s ease,border-color .32s ease; }
+.royal-design-card:hover { transform:translateY(-6px); border-color:rgba(184,149,85,.8); box-shadow:0 22px 44px rgba(43,25,53,.14); }
+.royal-design-card > div:first-child { background:#f1e9df; }
+.royal-design-card > div:last-child { background:linear-gradient(180deg,#fff 0%,#fdfaf5 100%); }
+.royal-design-card > div:last-child > div:last-child { border-top-color:rgba(184,149,85,.28); }
+.royal-design-card > div:last-child > div:last-child > div { background:#f7f0e4; border-color:rgba(184,149,85,.3); }
+.royal-design-card > div:last-child > div:last-child span { color:#71542d; }
