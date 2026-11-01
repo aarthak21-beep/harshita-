@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, MessageCircle, Sparkles, Scissors, ShieldCheck, Ruler } from 'lucide-react';
 import { BASE_WHATSAPP_URL } from '../utils/whatsapp';
+import heroBlouseImage from '../assets/images/hero_designer_blouses_1793545819948.jpg';
 
 export const Hero: React.FC = () => {
   return (
@@ -86,7 +87,7 @@ export const Hero: React.FC = () => {
 
               <div className="relative rounded-2xl overflow-hidden bg-white shadow-xl border border-[#E0D2F3]">
                 <img
-                  src="/src/assets/images/hero_designer_blouses_1793545819948.jpg"
+                  src={heroBlouseImage}
                   alt="HARSHITA CREATION - Exclusive Lavender Designer Blouse"
                   className="w-full h-[440px] sm:h-[500px] object-cover object-center"
                   referrerPolicy="no-referrer"
