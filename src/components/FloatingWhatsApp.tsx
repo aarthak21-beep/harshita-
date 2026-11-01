@@ -1,6 +1,6 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
-import { BASE_WHATSAPP_URL, WHATSAPP_PHONE } from '../utils/whatsapp';
+import { BASE_WHATSAPP_URL } from '../utils/whatsapp';
 
 export const FloatingWhatsApp: React.FC = () => {
   return (
@@ -15,11 +15,11 @@ export const FloatingWhatsApp: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20BD5A] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"
-        aria-label="Chat on WhatsApp 9082867663"
+        aria-label="WhatsApp"
       >
         <MessageCircle className="w-6 h-6 fill-white text-transparent shrink-0" />
         <span className="hidden sm:inline text-xs font-bold uppercase tracking-wider">
-          Order on WhatsApp ({WHATSAPP_PHONE})
+          WhatsApp
         </span>
       </a>
     </aside>
