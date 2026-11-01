@@ -178,10 +178,6 @@ export default function App() {
         onClose={() => setSelectedDesign(null)}
         isWishlisted={selectedDesign ? wishlist.includes(selectedDesign.id) : false}
         onToggleWishlist={toggleWishlist}
-        onOpenMeasurementGuide={() => {
-          setSelectedDesign(null);
-          setIsMeasurementGuideOpen(true);
-        }}
       />
 
       {/* Wishlist Drawer */}
