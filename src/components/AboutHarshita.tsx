@@ -104,7 +104,8 @@ export const AboutHarshita: React.FC = () => {
                   </p>
                 </div>
               </div>
-            </div>\n          </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
