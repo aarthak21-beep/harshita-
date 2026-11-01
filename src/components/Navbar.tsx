@@ -58,12 +58,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             Measurement Guide
           </button>
-          <a
-            href="#contact"
-            className="hover:text-[#3B1F56] transition-colors hover:underline underline-offset-8 decoration-[#8A63B8] decoration-2 whitespace-nowrap shrink-0"
-          >
-            Contact
-          </a>
         </nav>
 
         {/* Primary Actions */}
@@ -127,13 +121,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               Blouse Measurement Guide
             </button>
-            <a
-              href="#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-2 hover:text-[#5B3E8C]"
-            >
-              Contact & Location
-            </a>
           </div>
 
         </div>
