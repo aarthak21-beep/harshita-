@@ -1,6 +1,5 @@
 import React from 'react';
-import { ArrowDown, MessageCircle, Sparkles, Scissors, ShieldCheck, Ruler } from 'lucide-react';
-import { BASE_WHATSAPP_URL } from '../utils/whatsapp';
+import { ArrowDown, Sparkles, Scissors, ShieldCheck, Ruler } from 'lucide-react';
 import heroBlouseImage from '../assets/images/hero_designer_blouses_1793545819948.jpg';
 
 export const Hero: React.FC = () => {
@@ -43,18 +42,6 @@ export const Hero: React.FC = () => {
               >
                 <span>Explore Our Collection</span>
                 <ArrowDown className="w-4 h-4" />
-              </a>
-
-              <a
-                href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                  'Hello Harshita Creation! मला तुमच्या blouse collection बद्दल माहिती हवी आहे आणि ऑर्डर करायची आहे.'
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-[#25D366] hover:bg-[#20BD5A] text-white font-medium text-sm tracking-wider uppercase rounded-md shadow-md hover:shadow-lg transition-all"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>WhatsApp Order (9082867663)</span>
               </a>
             </div>
 
@@ -102,17 +89,7 @@ export const Hero: React.FC = () => {
                     Royal Lavender Hand-Embroidered Zardozi Blouse
                   </p>
                   <div className="mt-2 flex items-center justify-between text-xs text-white/90">
-                    <span>Price साठी WhatsApp करा</span>
-                    <a
-                      href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                        'Hello Harshita Creation! मला तुमच्या Hero Banner मधील Lavender Zardozi Blouse बद्दल माहिती हवी आहे.'
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded text-white font-medium transition"
-                    >
-                      Enquire Now
-                    </a>
+                    <span>Price साठी संपर्क करा</span>
                   </div>
                 </div>
               </div>
