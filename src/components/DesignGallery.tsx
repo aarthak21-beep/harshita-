@@ -203,7 +203,7 @@ export const DesignGallery: React.FC<DesignGalleryProps> = ({
 
         {/* Designs Grid */}
         {filteredDesigns.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
+          <div className="royal-design-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
             {filteredDesigns.map((design) => (
               <DesignCard
                 key={design.id}
