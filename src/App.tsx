@@ -19,6 +19,8 @@ import { BLOUSE_DESIGNS } from './data/blouseDesigns';
 import { BlouseDesign } from './types';
 import { Sparkles, MessageCircle, Ruler } from 'lucide-react';
 import { BASE_WHATSAPP_URL } from './utils/whatsapp';
+import bridalMaggamImage from './assets/images/bridal_maggam_showcase_1793545820641.jpg';
+import backNeckImage from './assets/images/back_neck_designer_blouse_1793545820860.jpg';
 
 export default function App() {
   const [wishlist, setWishlist] = useState<string[]>(() => {
@@ -70,7 +72,7 @@ export default function App() {
               <div className="p-6 rounded-2xl bg-white/90 border border-[#E4D5F7] shadow-xs flex flex-col sm:flex-row items-center gap-5">
                 <div className="w-full sm:w-36 h-40 rounded-xl overflow-hidden shrink-0 border border-[#EADBFA]">
                   <img
-                    src="/src/assets/images/bridal_maggam_showcase_1793545820641.jpg"
+                    src={bridalMaggamImage}
                     alt="Bridal Maggam Kundan Blouse"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -109,7 +111,7 @@ export default function App() {
               <div className="p-6 rounded-2xl bg-white/90 border border-[#E4D5F7] shadow-xs flex flex-col sm:flex-row items-center gap-5">
                 <div className="w-full sm:w-36 h-40 rounded-xl overflow-hidden shrink-0 border border-[#EADBFA]">
                   <img
-                    src="/src/assets/images/back_neck_designer_blouse_1793545820860.jpg"
+                    src={backNeckImage}
                     alt="Fancy Back Neck Designer Blouse"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
