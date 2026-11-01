@@ -105,3 +105,220 @@ body { background: var(--royal-ivory); }
 .royal-design-card > div:last-child > div:last-child { border-top-color:rgba(184,149,85,.28); }
 .royal-design-card > div:last-child > div:last-child > div { background:#f7f0e4; border-color:rgba(184,149,85,.3); }
 .royal-design-card > div:last-child > div:last-child span { color:#71542d; }
+
+
+/* Mobile-first polish — compact luxury boutique experience */
+@media (max-width: 639px) {
+  .royal-navbar > div:first-child {
+    min-height: 30px;
+    padding: 7px 12px;
+    font-size: 9px;
+    line-height: 1.35;
+    letter-spacing: .08em;
+  }
+  .royal-navbar > div:nth-child(2) {
+    min-height: 76px;
+    padding-left: 14px;
+    padding-right: 14px;
+    gap: 8px;
+  }
+  .royal-navbar > div:nth-child(2) > a img {
+    height: 58px;
+    max-width: 172px;
+  }
+  .royal-navbar > div:nth-child(2) > div {
+    gap: 5px;
+  }
+  .royal-navbar > div:nth-child(2) button {
+    min-width: 42px;
+    min-height: 42px;
+  }
+  .royal-navbar .lg\\:hidden {
+    border-top: 1px solid rgba(184,149,85,.25);
+    background: linear-gradient(180deg,#fffdf8,#f7f0f6);
+  }
+  .royal-navbar .lg\\:hidden a,
+  .royal-navbar .lg\\:hidden button {
+    padding: 13px 10px;
+    font-size: 13px;
+    border-color: rgba(184,149,85,.18);
+  }
+  .royal-hero > .max-w-7xl {
+    padding: 34px 20px 40px;
+  }
+  .royal-hero > .max-w-7xl > div {
+    gap: 28px;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child {
+    text-align: center;
+    align-items: center;
+  }
+  .royal-hero-title {
+    font-size: clamp(2.25rem, 10.2vw, 3.15rem);
+    line-height: 1.02;
+    letter-spacing: -.055em;
+    overflow-wrap: anywhere;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(2) {
+    justify-content: center;
+    font-size: 9px;
+    padding: 7px 11px;
+    letter-spacing: .13em;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(3) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(3) p:first-child {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(3) p:last-child {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(4) {
+    width: 100%;
+    padding-top: 2px;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(4) a {
+    width: 100%;
+    min-height: 50px;
+    border-radius: 999px;
+    font-size: 11px;
+    letter-spacing: .12em;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(5) {
+    width: 100%;
+    text-align: left;
+    gap: 13px 10px;
+    padding-top: 18px;
+  }
+  .royal-hero > .max-w-7xl > div > div:first-child > div:nth-child(5) > div {
+    font-size: 10px;
+    line-height: 1.4;
+    align-items: flex-start;
+  }
+  .royal-hero > .max-w-7xl > div > div:last-child {
+    width: min(100%, 390px);
+    margin-inline: auto;
+  }
+  .royal-hero-image {
+    border-width: 4px;
+    border-radius: 20px;
+  }
+  .royal-hero-image img {
+    height: min(112vw, 430px);
+    min-height: 310px;
+    object-position: center 35%;
+  }
+  .royal-hero-image > div:last-child {
+    padding: 18px 14px 14px;
+  }
+  .royal-hero-image > div:last-child p {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+  .royal-gallery {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+  .royal-gallery > .max-w-7xl {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 26px;
+  }
+  .royal-gallery h2 {
+    font-size: 29px;
+    line-height: 1.15;
+  }
+  .royal-gallery .royal-filter-panel {
+    padding: 13px;
+    border-radius: 17px;
+    gap: 13px;
+  }
+  .royal-gallery .royal-filter-panel > div:first-child {
+    gap: 10px;
+  }
+  .royal-gallery .royal-filter-panel input {
+    min-height: 46px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+  .royal-gallery .royal-filter-panel > div:first-child > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .royal-gallery .royal-filter-panel > div:first-child > div:last-child > button,
+  .royal-gallery .royal-filter-panel select {
+    min-height: 42px;
+    justify-content: center;
+    font-size: 11px;
+  }
+  .royal-gallery #categories {
+    margin-left: -13px;
+    margin-right: -13px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .royal-gallery #categories button {
+    min-height: 38px;
+    padding: 9px 13px;
+    border-radius: 999px;
+    font-size: 11px;
+  }
+  .royal-gallery > .max-w-7xl > div:nth-last-child(2) {
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .royal-gallery .royal-design-grid {
+    gap: 13px;
+  }
+  .royal-design-card {
+    border-radius: 15px;
+  }
+  .royal-design-card > div:first-child {
+    aspect-ratio: 4 / 5;
+  }
+  .royal-design-card > div:last-child {
+    padding: 11px;
+    gap: 9px;
+  }
+  .royal-design-card > div:last-child h3 {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  .royal-design-card > div:last-child p {
+    font-size: 10px;
+  }
+  .royal-design-card > div:first-child button {
+    font-size: 9px;
+  }
+  .royal-design-card > div:last-child > div:last-child > div {
+    padding: 5px 4px;
+  }
+  .royal-design-card > div:last-child > div:last-child span {
+    font-size: 9px;
+  }
+  .royal-luxury footer .max-w-7xl {
+    padding-top: 40px;
+  }
+  .royal-luxury footer .grid {
+    gap: 30px;
+  }
+  .royal-luxury footer img {
+    height: 70px;
+    max-width: 240px;
+  }
+}
+@media (min-width: 400px) and (max-width: 639px) {
+  .royal-design-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 399px) {
+  .royal-design-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .royal-design-card > div:last-child { padding: 9px; }
+  .royal-design-card > div:first-child button { padding: 5px 7px; }
+}
