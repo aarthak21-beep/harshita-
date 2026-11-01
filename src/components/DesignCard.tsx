@@ -20,7 +20,7 @@ export const DesignCard: React.FC<DesignCardProps> = ({
   const currentImage = showModelView ? design.modelImage : design.image;
 
   return (
-    <div className="group relative bg-white rounded-xl border border-[#EADBFA] shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden">
+    <div className="royal-design-card group relative bg-white rounded-2xl border border-[#EADBFA] shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden">
       {/* Visual Container */}
       <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#F7F3FB]">
         <ImageWithFallback
