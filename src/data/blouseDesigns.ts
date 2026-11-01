@@ -144,7 +144,7 @@ export const BLOUSE_DESIGNS: BlouseDesign[] = [
     id: 'hc-trad-03',
     name: 'Gayatri Temple Border Kanjeevaram Blouse',
     category: 'Traditional Blouse Designs',
-    image: 'https://www.houseofayana.com/cdn/shop/files/IMG_5368.heic?v=1707740353&width=1946',
+    image: 'https://i.pinimg.com/736x/68/85/d4/6885d49c82feddf5fb6d8b2fe916e3c7.jpg',
     modelImage: backNeckImage,
     fabric: 'Heavy Kanchipuram Mulberry Silk',
     work: 'Korvai Korai Temple Triangles & Coin Motifs',
