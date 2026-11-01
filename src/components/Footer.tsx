@@ -60,11 +60,7 @@ export const Footer: React.FC = () => {
 
         <div className="my-10 h-px bg-gradient-to-r from-transparent via-[#8F70AD]/70 to-transparent" />
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
-          <div className="space-y-1">
-            <p className="font-serif text-base font-bold tracking-[0.16em] text-white">HARSHITA CREATION</p>
-            <p className="text-[11px] tracking-[0.16em] uppercase text-[#BFAACF]">Exclusive Designer Blouses</p>
-          </div>
+        <div className="relative flex flex-col items-center justify-center gap-4 text-center">
           <p className="text-xs sm:text-sm font-semibold tracking-wide text-[#E6D9F0]">
             Designed &amp; Developed by MOTI Technologies
           </p>
