@@ -57,36 +57,6 @@ export const ContactSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-6 border-t border-[#F0E6FC] max-w-3xl mx-auto space-y-4">
-          <div className="text-center space-y-1">
-            <h3 className="text-xl font-serif font-bold text-[#3B1F56]">
-              Frequently Asked Questions
-            </h3>
-            <p className="text-xs text-[#705B86]">ब्लाउज ऑर्डर आणि डिलिव्हरीविषयी सामान्य प्रश्न</p>
-          </div>
-          <div className="space-y-2.5 pt-2">
-            {faqs.map((faq, idx) => {
-              const isOpen = openFaq === idx;
-              return (
-                <div key={idx} className="rounded-lg border border-[#EADBFA] bg-[#FAF8FD] overflow-hidden transition">
-                  <button
-                    type="button"
-                    onClick={() => setOpenFaq(isOpen ? null : idx)}
-                    className="w-full px-4 py-3.5 text-left text-xs sm:text-sm font-semibold text-[#3B1F56] flex items-center justify-between gap-3 cursor-pointer"
-                  >
-                    <span>{faq.q}</span>
-                    <ChevronDown className={`w-4 h-4 text-[#7C5DA6] transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-                  </button>
-                  {isOpen && (
-                    <div className="px-4 pb-4 pt-1 text-xs text-[#5C4971] leading-relaxed border-t border-[#EFE7FA]">
-                      {faq.a}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </section>
   );
