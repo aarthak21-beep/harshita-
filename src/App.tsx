@@ -48,7 +48,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8FC] text-[#2D2438] antialiased">
+    <div className="royal-luxury min-h-screen flex flex-col bg-[#FAF8FC] text-[#2D2438] antialiased">
       {/* Navbar with 3-Zone top bar contract */}
       <Navbar
         wishlistCount={wishlist.length}
@@ -62,11 +62,11 @@ export default function App() {
         <Hero />
 
         {/* Spotlight Showcase Banner: Bridal & Back Neck Masterpieces */}
-        <section className="bg-gradient-to-r from-[#FAF6FE] via-[#F4EBFB] to-[#FAF6FE] py-10 border-b border-[#EADBFA]">
+        <section className="royal-showcase bg-gradient-to-r from-[#FAF6FE] via-[#F4EBFB] to-[#FAF6FE] py-12 border-b border-[#EADBFA]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Feature 1: Bridal Maggam Work */}
-              <div className="p-6 rounded-2xl bg-white/90 border border-[#E4D5F7] shadow-xs flex flex-col sm:flex-row items-center gap-5">
+              <div className="p-6 rounded-2xl bg-white/90 border border-[#E4D5F7] shadow-xs royal-feature-card flex flex-col sm:flex-row items-center gap-5">
                 <div className="w-full sm:w-36 h-40 rounded-xl overflow-hidden shrink-0 border border-[#EADBFA]">
                   <img
                     src={bridalMaggamImage}
@@ -130,7 +130,7 @@ export default function App() {
         <AboutHarshita />
 
         {/* Interactive Measurement Callout Banner */}
-        <section className="bg-gradient-to-r from-[#65438C] to-[#4F2D74] text-white py-12">
+        <section className="royal-measurement bg-gradient-to-r from-[#65438C] to-[#4F2D74] text-white py-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-2 text-center md:text-left">
               <span className="text-xs font-semibold tracking-widest uppercase text-[#E6DBF5] flex items-center justify-center md:justify-start gap-1.5">
