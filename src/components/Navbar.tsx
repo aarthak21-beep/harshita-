@@ -23,13 +23,10 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Main Navigation (3-Zone Top Bar Contract) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-8">
-        {/* Zone 1: Brand Wordmark (Single Text Element) */}
-        <a
-          href="#"
-          className="text-xl sm:text-2xl font-serif font-bold tracking-wider text-[#3B1F56] hover:text-[#5B3E8C] transition-colors whitespace-nowrap shrink-0"
-        >
-          HARSHITA CREATION
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] flex items-center justify-between gap-8">
+        {/* Brand logo */}
+        <a href="#" aria-label="Harshita Creation home" className="shrink-0 flex items-center">
+          <img src="/harshita-creation-logo.svg" alt="Harshita Creation — Exclusive Designer Blouses" className="h-14 sm:h-[4.5rem] w-auto max-w-[170px] sm:max-w-[210px] object-contain" />
         </a>
 
         {/* Zone 2: Single-line Text Navigation Links */}
