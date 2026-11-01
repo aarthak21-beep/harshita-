@@ -72,8 +72,8 @@ export const DesignGallery: React.FC<DesignGalleryProps> = ({
   }, [designs]);
 
   return (
-    <section id="gallery" className="py-14 bg-[#FAF8FC] border-b border-[#EADBFA]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <section id="gallery" className="royal-gallery py-16 sm:py-20 bg-[#FAF8FC] border-b border-[#EADBFA]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#7C5DA6]">
@@ -81,7 +81,7 @@ export const DesignGallery: React.FC<DesignGalleryProps> = ({
             <span>Exclusive Collection</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#3B1F56]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#3B1F56]">
             Blouse Design Gallery
           </h2>
 
@@ -91,7 +91,7 @@ export const DesignGallery: React.FC<DesignGalleryProps> = ({
         </div>
 
         {/* Search, Filter & Sorting Bar */}
-        <div className="bg-white p-4 rounded-xl border border-[#E8DAF7] shadow-xs space-y-4">
+        <div className="royal-filter-panel bg-white p-5 sm:p-6 rounded-2xl border border-[#E8DAF7] shadow-xs space-y-4">
           <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
             {/* Search Input */}
             <div className="relative flex-1">
@@ -203,7 +203,7 @@ export const DesignGallery: React.FC<DesignGalleryProps> = ({
 
         {/* Designs Grid */}
         {filteredDesigns.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
             {filteredDesigns.map((design) => (
               <DesignCard
                 key={design.id}
