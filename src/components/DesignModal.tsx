@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   X,
-  MessageCircle,
   Heart,
   Sparkles,
   Scissors,
@@ -10,8 +9,7 @@ import {
   Layers,
   HelpCircle,
 } from 'lucide-react';
-import { BlouseDesign, EnquiryTopic } from '../types';
-import { getWhatsAppDesignEnquiryUrl } from '../utils/whatsapp';
+import { BlouseDesign } from '../types';
 import { ImageWithFallback } from './ImageWithFallback';
 
 interface DesignModalProps {
@@ -32,19 +30,8 @@ export const DesignModal: React.FC<DesignModalProps> = ({
   if (!design) return null;
 
   const [activeTab, setActiveTab] = useState<'blouse' | 'model'>('blouse');
-  const [selectedTopic, setSelectedTopic] = useState<EnquiryTopic>('general');
-  const [customNote, setCustomNote] = useState('');
 
   const currentDisplayImage = activeTab === 'blouse' ? design.image : design.modelImage;
-
-  const enquiryTopics: { id: EnquiryTopic; label: string; marathi: string }[] = [
-    { id: 'general', label: 'General Enquiry', marathi: 'सामान्य चौकशी' },
-    { id: 'stitching_charges', label: 'Stitching Charges', marathi: 'शिलाई शुल्क' },
-    { id: 'availability', label: 'Fabric & Design Availability', marathi: 'उपलब्धता' },
-    { id: 'measurements', label: 'Measurement & Fitting', marathi: 'मापे आणि फिटिंग' },
-    { id: 'delivery', label: 'Delivery Time', marathi: 'डिलिव्हरी दिवस' },
-    { id: 'customization', label: 'Neck/Sleeve Customization', marathi: 'कस्टमायझेशन' },
-  ];
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-5">
@@ -193,11 +180,8 @@ export const DesignModal: React.FC<DesignModalProps> = ({
                     Pricing & Stitching
                   </span>
                   <p className="text-base font-bold text-[#5B3E8C]">
-                    Price साठी WhatsApp करा
+                    Price साठी संपर्क करा
                   </p>
-                </div>
-                <div className="text-right text-[11px] text-[#6E548B]">
-                  <span>WhatsApp: 9082867663</span>
                 </div>
               </div>
 
@@ -286,26 +270,7 @@ export const DesignModal: React.FC<DesignModalProps> = ({
                   />
                 </div>
               </div>
-            </div>
-
-            {/* Action Bar */}
-            <div className="pt-4 border-t border-[#F0E6FC] space-y-2">
-              <a
-                href={getWhatsAppDesignEnquiryUrl(design, selectedTopic, customNote)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-3.5 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-sm rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>WhatsApp वर Enquiry करा (9082867663)</span>
-              </a>
-
-              <p className="text-[11px] text-center text-[#7C5DA6]">
-                Direct message to Harshita with design specs & instant support.
-              </p>
-            </div>
-          </div>
-        </div>
+            </div>\n          </div>\n        </div>
       </div>
     </div>
   );
