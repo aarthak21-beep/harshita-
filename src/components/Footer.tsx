@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowUp, Scissors, Truck, Gem } from 'lucide-react';
+import { ArrowUp, Scissors, Truck, Gem } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -11,9 +11,8 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-14">
           {/* Brand */}
           <div className="md:col-span-5 space-y-5">
-            <a href="#" className="inline-flex items-center gap-2 text-2xl sm:text-3xl font-serif font-bold tracking-[0.12em] text-white hover:text-[#E7D7F8] transition-colors">
-              <Sparkles className="w-6 h-6 text-[#C9A9EA]" />
-              HARSHITA CREATION
+            <a href="#" aria-label="Harshita Creation home" className="inline-flex items-center">
+              <img src="/harshita-creation-logo.svg" alt="Harshita Creation" className="h-20 sm:h-24 w-auto max-w-[280px] object-contain rounded-xl bg-white px-3 py-1" />
             </a>
             <div className="h-px w-20 bg-gradient-to-r from-[#C9A9EA] to-transparent" />
             <p className="text-xs sm:text-sm uppercase tracking-[0.22em] font-semibold text-[#DCC9F0]">
