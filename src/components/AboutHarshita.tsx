@@ -5,30 +5,11 @@ export const AboutHarshita: React.FC = () => {
   return (
     <section id="about-harshita" className="py-16 bg-white border-b border-[#EADBFA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          {/* Left Column: Harshita's Photo */}
-          <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative mx-auto max-w-sm sm:max-w-md">
-              {/* Decorative lavender backdrop glow */}
-              <div className="absolute -inset-2 bg-gradient-to-tr from-[#CBB6EA] via-[#EADBFA] to-[#FAF8FC] rounded-2xl transform -rotate-2 opacity-80" />
-
-              <div className="relative rounded-2xl overflow-hidden bg-white shadow-xl border border-[#E0D2F3]">
-                <div className="w-full h-[460px] sm:h-[520px] bg-gradient-to-br from-[#F5F0FB] via-[#EFE7FA] to-[#E5D7F6]" />
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column: Exact Content, Philosophy & WhatsApp Consultation */}
-          <div className="lg:col-span-7 order-1 lg:order-2 space-y-6 text-left">
+        <div className="max-w-5xl mx-auto space-y-6 text-left">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EFE7FA] border border-[#D8CCE8] text-xs font-semibold uppercase tracking-widest text-[#5B3E8C]">
               <Sparkles className="w-3.5 h-3.5 text-[#7C5DA6]" />
               <span>Meet Your Designer</span>
             </div>
-
-            {/* MANDATORY HEADING */}
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#3B1F56]">
-              About Harshita
-            </h2>
 
             {/* MANDATORY CONTENT BLOCK */}
             <div className="relative pl-5 border-l-2 border-[#8A63B8] space-y-3">
@@ -91,7 +72,6 @@ export const AboutHarshita: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
