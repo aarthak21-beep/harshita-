@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, Heart, Menu, X, Sparkles } from 'lucide-react';
-import { BASE_WHATSAPP_URL } from '../utils/whatsapp';
+import { Heart, Menu, X, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   wishlistCount: number;
@@ -20,7 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Top Bar Announcement Strip */}
       <div className="bg-gradient-to-r from-[#65438C] via-[#7B54A6] to-[#65438C] text-white text-[12px] py-1.5 px-4 text-center tracking-wide font-medium flex items-center justify-center gap-2">
         <Sparkles className="w-3.5 h-3.5 text-[#E6DBF5]" />
-        <span>Exclusive Designer Blouses · Custom Stitching & Maggam Work · WhatsApp Order: 9082867663</span>
+        <span>Exclusive Designer Blouses · Custom Stitching & Maggam Work</span>
       </div>
 
       {/* Main Navigation (3-Zone Top Bar Contract) */}
@@ -71,9 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             Contact
           </a>
-        </nav>
-
-        {/* Zone 3: Primary Actions & WhatsApp CTA */}
+        </nav>{/* Primary Actions */}
         <div className="flex items-center gap-3 shrink-0">
           {/* Wishlist Button */}
           <button
@@ -89,21 +86,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
             )}
           </button>
-
-          {/* Primary Action Button */}
-          <a
-            href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-              'Hello Harshita Creation! मला तुमच्या designer blouse collection बद्दल माहिती हवी आहे.'
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4.5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#5B3E8C] hover:bg-[#472E6F] active:bg-[#3B1F56] rounded-md transition-all shadow-sm hover:shadow whitespace-nowrap shrink-0"
-          >
-            <MessageCircle className="w-4 h-4 text-[#A7F3D0]" />
-            <span className="hidden sm:inline">WhatsApp Order</span>
-            <span className="sm:hidden">WhatsApp</span>
-          </a>
-
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
