@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import {
-  X,
-  Heart,
-  Sparkles,
-  Scissors,
-  CheckCircle2,
-  Calendar,
-  Layers,
-  HelpCircle,
-} from 'lucide-react';
+import { X, Heart } from 'lucide-react';
 import { BlouseDesign } from '../types';
 import { ImageWithFallback } from './ImageWithFallback';
 
@@ -17,7 +8,6 @@ interface DesignModalProps {
   onClose: () => void;
   isWishlisted: boolean;
   onToggleWishlist: (id: string) => void;
-  onOpenMeasurementGuide: () => void;
 }
 
 export const DesignModal: React.FC<DesignModalProps> = ({
@@ -25,7 +15,6 @@ export const DesignModal: React.FC<DesignModalProps> = ({
   onClose,
   isWishlisted,
   onToggleWishlist,
-  onOpenMeasurementGuide,
 }) => {
   if (!design) return null;
 
