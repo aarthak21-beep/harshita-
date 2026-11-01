@@ -17,8 +17,7 @@ import { MeasurementGuideModal } from './components/MeasurementGuideModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { BLOUSE_DESIGNS } from './data/blouseDesigns';
 import { BlouseDesign } from './types';
-import { Sparkles, MessageCircle, Ruler } from 'lucide-react';
-import { BASE_WHATSAPP_URL } from './utils/whatsapp';
+import { Sparkles, Ruler } from 'lucide-react';
 import bridalMaggamImage from './assets/images/bridal_maggam_showcase_1793545820641.jpg';
 import backNeckImage from './assets/images/back_neck_designer_blouse_1793545820860.jpg';
 
@@ -89,21 +88,7 @@ export default function App() {
                   <p className="text-xs text-[#5D4973] leading-relaxed">
                     Over 80 hours of hand aari embroidery with real pearls and kundan stones on pure raw silk.
                   </p>
-                  <div className="pt-1 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-[#5B3E8C]">
-                      Price साठी WhatsApp करा
-                    </span>
-                    <a
-                      href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                        'Hello Harshita Creation! मला तुमच्या Bridal Maggam Work Blouse बद्दल माहिती हवी आहे.'
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1.5 bg-[#5B3E8C] text-white text-[11px] font-semibold rounded hover:bg-[#472E6F] transition"
-                    >
-                      Enquire
-                    </a>
-                  </div>
+                  <div className="pt-1"><span className="text-xs font-semibold text-[#5B3E8C]">Price साठी संपर्क करा</span></div>
                 </div>
               </div>
 
@@ -128,21 +113,7 @@ export default function App() {
                   <p className="text-xs text-[#5D4973] leading-relaxed">
                     Statement back cuts tailored with handmade latkan tassels, pearl borders, and secure fit.
                   </p>
-                  <div className="pt-1 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-[#5B3E8C]">
-                      Price साठी WhatsApp करा
-                    </span>
-                    <a
-                      href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                        'Hello Harshita Creation! मला तुमच्या Fancy Back Neck Blouse बद्दल माहिती हवी आहे.'
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1.5 bg-[#5B3E8C] text-white text-[11px] font-semibold rounded hover:bg-[#472E6F] transition"
-                    >
-                      Enquire
-                    </a>
-                  </div>
+                  <div className="pt-1"><span className="text-xs font-semibold text-[#5B3E8C]">Price साठी संपर्क करा</span></div>
                 </div>
               </div>
             </div>
@@ -172,7 +143,7 @@ export default function App() {
                 Online Measurements & Fitting Consultation
               </h3>
               <p className="text-xs sm:text-sm text-[#E2D4F0] max-w-xl">
-                घरबसल्या आपल्या ब्लाउजचे योग्य माप पाठवा. आमच्या सोप्या गाईडद्वारे माप घ्या आणि WhatsApp वर पाठवून परफेक्ट फिटिंग मिळवा.
+                घरबसल्या आपल्या ब्लाउजचे योग्य माप तयार ठेवा. फिटिंगविषयी मार्गदर्शनासाठी खालील संपर्क बटण वापरा.
               </p>
             </div>
 
@@ -183,17 +154,7 @@ export default function App() {
               >
                 Open Measurement Guide
               </button>
-              <a
-                href={`${BASE_WHATSAPP_URL}?text=${encodeURIComponent(
-                  'Hello Harshita Creation! मला माझ्या ब्लाउजच्या मापाबद्दल मार्गदर्शन हवे आहे.'
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-6 py-3.5 bg-[#25D366] text-white font-bold text-xs uppercase tracking-wider rounded-md hover:bg-[#20BD5A] transition shadow-md flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp (9082867663)</span>
-              </a>
+              
             </div>
           </div>
         </section>
