@@ -1,7 +1,6 @@
 import React from 'react';
-import { X, Heart, MessageCircle, Trash2, ArrowRight } from 'lucide-react';
+import { X, Heart, Trash2 } from 'lucide-react';
 import { BlouseDesign } from '../types';
-import { getWhatsAppWishlistEnquiryUrl } from '../utils/whatsapp';
 import { ImageWithFallback } from './ImageWithFallback';
 
 interface WishlistDrawerProps {
@@ -92,7 +91,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
                     {design.neckType} · {design.fabric}
                   </p>
                   <span className="text-[10px] font-semibold text-[#5B3E8C] mt-1 block">
-                    Price साठी WhatsApp करा
+                    Price साठी संपर्क करा
                   </span>
                 </div>
 
@@ -116,26 +115,5 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
               </p>
             </div>
           )}
-        </div>
-
-        {/* Footer WhatsApp Button */}
-        {wishlistedDesigns.length > 0 && (
-          <div className="p-5 border-t border-[#F0E6FC] bg-[#FAF8FC] space-y-2">
-            <a
-              href={getWhatsAppWishlistEnquiryUrl(wishlistedDesigns)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3.5 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition flex items-center justify-center gap-2"
-            >
-              <MessageCircle className="w-4 h-4" />
-              <span>या सर्व {wishlistedDesigns.length} डिझाईन्ससाठी WhatsApp करा</span>
-            </a>
-            <p className="text-[11px] text-center text-[#7C5DA6]">
-              Sends all shortlisted blouse names in 1 organized WhatsApp message.
-            </p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
+        </div>\n      </div>\n    </div>\n  );
 };
