@@ -13,21 +13,7 @@ export const AboutHarshita: React.FC = () => {
               <div className="absolute -inset-2 bg-gradient-to-tr from-[#CBB6EA] via-[#EADBFA] to-[#FAF8FC] rounded-2xl transform -rotate-2 opacity-80" />
 
               <div className="relative rounded-2xl overflow-hidden bg-white shadow-xl border border-[#E0D2F3]">
-                <div className="w-full h-[460px] sm:h-[520px] flex flex-col items-center justify-center bg-gradient-to-br from-[#F5F0FB] via-[#EFE7FA] to-[#E5D7F6] text-[#5B3E8C] text-center px-6">
-                  <div className="w-24 h-24 rounded-full bg-white/80 border border-[#D8CCE8] flex items-center justify-center mb-4"><span className="text-4xl font-serif font-bold">H</span></div>
-                  <p className="font-serif text-xl font-semibold">Harshita</p>
-                  <p className="text-sm mt-1">HARSHITA CREATION</p>
-                  <p className="text-xs mt-3 text-[#7C5DA6]">Photo coming soon</p>
-                </div>
-
-                {/* Bottom glass nametag */}
-                <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/85 via-black/50 to-transparent text-white">
-                  <span className="text-[11px] font-semibold tracking-widest uppercase text-[#E9D5FF] block">
-                    HARSHITA CREATION
-                  </span>
-                  <p className="text-lg font-serif font-bold">Harshita</p>
-                  <p className="text-xs text-white/90">Lead Designer & Master Stylist</p>
-                </div>
+                <div className="w-full h-[460px] sm:h-[520px] bg-gradient-to-br from-[#F5F0FB] via-[#EFE7FA] to-[#E5D7F6]" />
               </div>
             </div>
           </div>
