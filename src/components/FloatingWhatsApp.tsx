@@ -18,7 +18,7 @@ export const FloatingWhatsApp: React.FC = () => {
         aria-label="WhatsApp"
       >
         <MessageCircle className="w-6 h-6 fill-white text-transparent shrink-0" />
-        <span className="hidden sm:inline text-xs font-bold uppercase tracking-wider">
+        <span className="inline text-xs font-bold uppercase tracking-wider">
           WhatsApp
         </span>
       </a>
