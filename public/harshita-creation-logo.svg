@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4b1269"/><stop offset="1" stop-color="#8b1c75"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8dc86"/><stop offset="1" stop-color="#b77b22"/></linearGradient></defs>
+<path d="M155 25C35 25 15 260 155 275M155 25C275 25 295 260 155 275" fill="none" stroke="url(#gold)" stroke-width="4"/>
+<path d="M143 68h24l9 24-2 20 45 28-18 95H91l-18-95 45-28-2-20z" fill="url(#g)" stroke="url(#gold)" stroke-width="3"/>
+<path d="M117 114l-20 22 12 52 20-7 10-36 10 36 20 7 12-52-20-22" fill="none" stroke="url(#gold)" stroke-width="3"/>
+<path d="M112 151q35 22 70 0M108 181q39 18 78 0M121 125l-12 24m64-24 12 24" fill="none" stroke="#f5d88d" stroke-width="2"/>
+<path d="M155 188v26m-10-13h20" stroke="url(#gold)" stroke-width="3"/><circle cx="155" cy="220" r="5" fill="#dca1ce"/>
+<path d="M56 236q-12-24 4-34q18 7 14 27q15-19 30-8q-4 25-31 26" fill="#a63891" stroke="url(#gold)" stroke-width="2"/>
+<text x="315" y="155" font-family="Georgia,serif" font-size="94" font-style="italic" fill="#55105d">Harshita</text>
+<path d="M328 174h480" stroke="url(#gold)" stroke-width="3"/>
+<text x="565" y="245" text-anchor="middle" font-family="Georgia,serif" font-size="60" fill="#55105d" letter-spacing="8">CREATION</text>
+<path d="M725 60q20-30 40 0q20 30 40 0" fill="none" stroke="#8b1c75" stroke-width="4"/>
+<path d="M785 61q22-30 34-5" fill="none" stroke="url(#gold)" stroke-width="3"/>
+</svg>
